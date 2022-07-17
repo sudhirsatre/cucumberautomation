@@ -5,11 +5,10 @@ import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 
-
-
-@RunWith(Cucumber.class)
-@CucumberOptions(
-		
+//@RunWith(Cucumber.class)
+//@CucumberOptions(
+	@io.cucumber.testng.CucumberOptions
+	    (
 		features = {"C:\\Users\\SUDHIR\\eclipse-workspace\\Cucumber.Autmation\\src\\test\\java\\Features\\Login.feature"},
 		monochrome = true,
 		plugin = {"pretty","html:target/HTMLREPORT"},
@@ -18,6 +17,6 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
 		dryRun = false
 		
 		)
-public class LoginRunner  {
+public class LoginRunner extends AbstractTestNGCucumberTests  {
 
 }
