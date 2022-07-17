@@ -10,6 +10,7 @@ import POM.LoginPage;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class LoginstepDefination {
 
@@ -21,7 +22,8 @@ public class LoginstepDefination {
 	@Given("user open the facebook url")
 	public void user_open_the_facebook_url() {
 
-		System.setProperty("webdriver.chrome.driver", "D:\\software\\Driver\\chromedriver.exe");
+		//System.setProperty("webdriver.chrome.driver", "D:\\software\\Driver\\chromedriver.exe");
+		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://www.facebook.com");
