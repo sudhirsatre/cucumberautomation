@@ -5,9 +5,10 @@ import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 
-@RunWith(Cucumber.class)
-@CucumberOptions(
-		
+//@RunWith(Cucumber.class)
+//@CucumberOptions(
+	@io.cucumber.testng.CucumberOptions
+	(
 		features = {"C:\\Users\\SUDHIR\\eclipse-workspace\\Cucumber.Autmation\\src\\test\\java\\Features\\Guru99Login.feature"},
 		dryRun = false,
 		monochrome = true,
@@ -16,7 +17,7 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
 
 		)
 
-public class Guru99BankRunner{
+public class Guru99BankRunner extends AbstractTestNGCucumberTests{
 	
 
 

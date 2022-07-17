@@ -5,9 +5,10 @@ import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 
-@RunWith(Cucumber.class)
-//@io.cucumber.testng.CucumberOptions
-@CucumberOptions(
+//@RunWith(Cucumber.class)
+@io.cucumber.testng.CucumberOptions
+//@CucumberOptions
+(
 			
 			features=".//Features//Facebooklogin.feature",
 			glue = "stepDefination",
@@ -17,6 +18,6 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
 		
 		)
 
-public class Facebookruneer {
+public class Facebookruneer extends AbstractTestNGCucumberTests{
 
 }
