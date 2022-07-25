@@ -33,7 +33,7 @@ Feature: Test Facebook login
     
   Scenario: Test Facebook Loing Function with InValid UserName valid Password
   #  Given User should be open "https://www.facebook.com/"
-    And User enter username "sudhirsatr" and password "sudhir-123"
+    And User enter username "sudhirsatrrtrt" and password "sudhir-123"
     When User click LoginButton
     Then User enter the Home Page
      And Browser close
